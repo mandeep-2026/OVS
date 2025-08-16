@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Online Voting System</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            color: #2c3e50;
+        }
+        /* Navbar */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            padding: 12px 20px;
+            position: relative;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .menu {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .menu a:hover {
+            color: #18bc9c;
+        }
+        /* Help Section */
+        
+        .help-container {
+            background: white;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .help-container h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .faq {
+            margin-bottom: 20px;
+        }
+        
+        .faq h3 {
+            font-size: 16px;
+            color: #18bc9c;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .faq p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #34495e;
+            margin: 0;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1><i class="fas fa-vote-yea"></i> Online Voting System</h1>
+        <div class="menu">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Dashboard.php"><i class="fas fa-gavel"></i> Dashboard</a>
+            <a href="../login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </div>
+
+    <p style="text-align:left; font-size:16px;padding:15px;">
+        The Help and Support section of an online voting system is designed to assist voters and administrators in resolving any issues or queries they may face during the election process. It provides clear guidance on how to register, log in, cast a vote, and
+        view results, along with troubleshooting steps for common problems such as forgotten passwords, login errors, or system navigation difficulties. Support may be offered through multiple channels, including FAQs, user manuals, live chat, email support,
+        or a dedicated helpline.
+    </p>
+
+    <img src="../Images/help.webp" alt="Help Section" height="600px" width="100%">
+
+    <p style="text-align:left; font-size:16px;padding:15px;">
+        This section ensures that voters have access to timely and accurate assistance, helping them complete the voting process smoothly and without confusion. By offering reliable help and support, the system builds user confidence, promotes participation,
+        and ensures that technical or procedural issues do not hinder the fairness and efficiency of the election.
+    </p>
+
+    <!-- Help Section -->
+    <div class="help-container">
+        <h2><i class="fas fa-question-circle"></i> Help & Support</h2>
+
+        <div class="faq">
+            <h3><i class="fas fa-user-plus"></i> How do I register?</h3>
+            <p>Go to the <b>Register</b> page, fill in your name, mobile number, password, address, upload your photo, select your role (<b>Voter</b> or <b>Group</b>), and click "Register".</p>
+        </div>
+
+        <div class="faq">
+            <h3><i class="fas fa-sign-in-alt"></i> How do I log in?</h3>
+            <p>After registration, visit the <b>Login</b> page, enter your registered email and password, and click "Login" to access your dashboard.</p>
+        </div>
+
+        <div class="faq">
+            <h3><i class="fas fa-vote-yea"></i> How do I vote?</h3>
+            <p>In your dashboard, scroll to the list of groups or candidates. Click the <b>Vote</b> button next to your preferred choice. You can vote only once.</p>
+        </div>
+
+        <div class="faq">
+            <h3><i class="fas fa-lock"></i> Is my vote secure?</h3>
+            <p>Yes. Our system uses encryption to ensure your vote remains private. No one can see your voting choice.</p>
+        </div>
+
+        <div class="faq">
+            <h3><i class="fas fa-headset"></i> Need more help?</h3>
+            <p>Contact our support team: <b>Email:</b> mandeepchaurasia8@gmail.com | <b>Phone:</b> +91-9569478802</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Online Voting System | Developed by Mandeep Chaurasia | Your vote matters!
+    </footer>
+
+</body>
+
+</html>

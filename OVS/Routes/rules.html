@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Rules - Online Voting System</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            color: #2c3e50;
+        }
+        /* Navbar */
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            position: relative;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 22px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 40px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .menu a:hover {
+            color: #18bc9c;
+        }
+        /* Rules Section */
+        
+        .rules-container {
+            background: white;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rules-container h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .rules-container ol {
+            padding-left: 20px;
+        }
+        
+        .rules-container li {
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .rules-container li i {
+            color: #18bc9c;
+            margin-right: 5px;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1><i class="fas fa-vote-yea"></i> Online Voting System</h1>
+        <div class="menu">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Dashboard.php"><i class="fas fa-gavel"></i> Dashboard</a>
+            <a href="../login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </div>
+    </div>
+
+    <h1 style="padding: 20px;"><i class="fas fa-gavel"></i> Voting Rules</h1>
+
+    <p style="text-align:left; font-size:16px;padding:15px;">
+        In an online voting system, certain rules must be followed to ensure fairness, security, and transparency throughout the election process. Only registered and verified voters are allowed to participate, and each voter can cast their vote only once. Voters
+        must log in using valid credentials, such as a username, password, or OTP, to prevent unauthorized access.
+    </p>
+
+    <p style="text-align:left; font-size:16px;padding:15px;">
+        The voting must be conducted within the specified time period, and any votes cast after the deadline will not be counted. All votes are encrypted and stored securely to prevent tampering or duplication, and the system should maintain voter anonymity so
+        that no one can trace a vote back to an individual.
+    </p>
+    <center>
+        <img src="../Images/votes.jpeg" alt="no" height="300px" width="50%"></center>
+    <p style="text-align:left; font-size:16px;padding:15px;">
+        Only registered and verified voters are allowed to participate, and each voter can cast their vote only once. Voters must log in using valid credentials, such as a username, password, or OTP, to prevent unauthorized access. Once a vote is submitted, it
+        cannot be changed or withdrawn, ensuring the integrity of the process.
+    </p>
+
+    <div class="rules-container">
+        <h2><i class="fas fa-gavel"></i> Voting Rules</h2>
+        <ol>
+            <li><i class="fas fa-check-circle"></i> Each registered voter can cast their vote only once.</li>
+            <li><i class="fas fa-check-circle"></i> Voting credentials (email & password) must be kept confidential.</li>
+            <li><i class="fas fa-check-circle"></i> Votes once submitted cannot be changed or withdrawn.</li>
+            <li><i class="fas fa-check-circle"></i> Any attempt to manipulate or hack the system will lead to disqualification.</li>
+            <li><i class="fas fa-check-circle"></i> The voting portal will remain open only during the official election period.</li>
+            <li><i class="fas fa-check-circle"></i> Make sure your internet connection is stable before voting.</li>
+            <li><i class="fas fa-check-circle"></i> Respect the privacy of other voters.</li>
+        </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Online Voting System | Developed by Mandeep Chaurasia | Your vote matters!
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background: white;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Top Navigation Bar */
+        
+        #top1 {
+            background: #2c3e50;
+            height: 70px;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        #a1 {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            flex: 1;
+        }
+        
+        .menu {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .nav-link a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .nav-link a:hover {
+            color: #18bc9c;
+        }
+        /* Hero Section */
+        
+        #image {
+            height: 500px;
+            width: 100%;
+            background: url("../Images/home.avif") no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: black;
+        }
+        
+        h3 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #sub {
+            padding: 20px 0;
+        }
+        
+        #sub button {
+            background: #5cd297;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        #sub button:hover {
+            background: #4bbf86;
+        }
+        /* Info Section */
+        
+        #skill {
+            padding: 20px;
+            background: #f7f7f7;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        /* Features Section */
+        
+        #slider {
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .box {
+            height: 300px;
+            width: 30%;
+            background: white;
+            margin: 15px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        
+        .box:hover {
+            background: #b3ffb3;
+            transform: translateY(-10px) scale(1.05);
+        }
+        
+        .box img {
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        /* Gallery Section */
+        
+        #port {
+            padding: 20px;
+            background: white;
+        }
+        
+        #gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        
+        .a {
+            height: 200px;
+            width: 300px;
+            background: #f5f5f5;
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px grey;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .a img {
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+        }
+        
+        .a img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+        /* Footer Styling */
+        
+        #footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        #footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        .footer-links a {
+            color: #18bc9c;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 8px;
+            font-size: 18px;
+        }
+        
+        .social-icons a:hover {
+            color: #18bc9c;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="top1">
+        <div id="a1"><i class="fas fa-vote-yea"></i> Online Voting System</div>
+        <div class="menu">
+            <div class="nav-link"><a href="dashboard.php"><i class="fas fa-home"></i> Dashboard</a></div>
+            <div class="nav-link"><a href="rules.html"><i class="fas fa-gavel"></i> Rules</a></div>
+            <div class="nav-link"><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></div>
+            <div class="nav-link"><a href="../login.html"><i class="fas fa-sign-in-alt"></i> Login</a></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div id="image">
+        <h3>Welcome to Online Voting System</h3>
+        <p>Secure • Transparent • Easy to Use</p>
+        <div id="sub">
+            <button>Start Voting</button>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <div id="skill">
+        <h2>Why Choose Our System?</h2>
+        <p>Our Online Voting System ensures fairness, security, and accessibility for all voters. It is designed to be simple yet powerful, providing a hassle-free voting experience.</p>
+    </div>
+
+    <!-- Features Section -->
+    <div id="slider">
+        <div class="box">
+            <img src="../Images/secure.png" alt="Secure">
+            <h4>Highly Secure</h4>
+            <p>Advanced encryption keeps your vote private and safe.</p>
+        </div>
+
+        <div class="box">
+            <img src="../Images/easy.png" alt="Easy">
+            <h4>Easy to Use</h4>
+            <p>Simple interface for a smooth voting process.</p>
+        </div>
+
+        <div class="box">
+            <img src="../Images/result.jpeg" alt="Fast Results">
+            <h4>Instant Results</h4>
+            <p>Accurate and quick result calculations after voting ends.</p>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="port">
+        <h2>Gallery</h2>
+        <p>Snapshots of our voting events and campaigns</p>
+    </div>
+
+    <div id="gallery">
+        <div class="a">
+            <img src="../Images/booth.png" alt="Voting Booth">
+            <p style="color:black;">Voting Booth</p>
+        </div>
+        <div class="a">
+            <img src="../Images/one-voter-sure.png" alt="Campaign">
+            <p style="color:black;">Campaign</p>
+        </div>
+        <div class="a">
+            <img src="../Images/counts.jpeg" alt="Counting">
+            <p style="color:black;">Vote Counting</p>
+        </div>
+        <div class="a">
+            <img src="../Images/cele.png" alt="Celebration">
+            <p style="color:black;">Celebration</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Online Voting System. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="rules.html">Rules</a> |
+                <a href="help.html">Help & Support</a> |
+                <a href="../login.html">Login</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
