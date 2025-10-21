@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #008080;
+            /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+            background: white;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            width: 700px;
+        }
+        
+        .form-box {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .form-box h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            /* Dark Blue-Grey */
+            text-decoration: underline;
+        }
+        
+        .form-box input,
+        .form-box select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .form-box a {
+            font-size: 13px;
+            color: #18bc9c;
+            /* Emerald Green */
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        .form-box button {
+            width: 100%;
+            padding: 12px;
+            background: #18bc9c;
+            /* Emerald Green */
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .form-box button:hover {
+            background: #16a085;
+            /* Darker emerald */
+        }
+        
+        .form-box .signup {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .form-box .signup a {
+            color: #18bc9c;
+            /* Emerald Green */
+            text-decoration: none;
+        }
+        
+        .image-box {
+            flex: 1;
+            background-image: url('Images/Voting-image-6-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        
+        .image-box h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .image-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="api/login.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="voterid" placeholder="Enter voter id" required>
+                <input type="password" name="password" placeholder="Enter your password">
+                <select name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+                <button type="submit">Login</button>
+                <div class="signup">
+                    Don't have an account? <a href="Routes/registration.html">Register now</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-box">
+            <!-- Optional: you can add a motivational quote here -->
+        </div>
+    </div>
+
+</body>
+
+</html>

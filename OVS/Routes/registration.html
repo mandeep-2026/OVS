@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVS - Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #008080;
+            /* Teal background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .register-container {
+            background: white;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            width: 850px;
+        }
+        
+        .form-box {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .form-box h2 {
+            margin-bottom: 20px;
+            color: #006666;
+            /* Dark teal heading */
+            text-decoration: underline;
+        }
+        
+        .form-box input,
+        .form-box select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .form-box input[type="file"] {
+            padding: 6px;
+            border: none;
+        }
+        
+        .form-box button {
+            width: 100%;
+            padding: 12px;
+            background: #006666;
+            /* Dark teal button */
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .form-box .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .form-box .login-link a {
+            color: #006666;
+            /* Dark teal link */
+            text-decoration: none;
+        }
+        
+        .image-box {
+            flex: 1;
+            background-image: url('../Images/vote.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <div class="form-box">
+            <h2>Register</h2>
+            <form action="../api/registration.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="email" placeholder="Enter name" required>
+                <input type="text" name="voterid" placeholder="Enter voter id" required>
+
+                <input type="tel" name="mobile" placeholder="Enter Mobile" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="cpassword" placeholder="Confirm Password" required>
+                <input type="text" name="address" placeholder="Address" required>
+                <label>Upload Image:</label>
+                <input type="file" name="photo" required>
+                <select name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+                <button type="submit">Register</button>
+                <div class="login-link">
+                    Already User? <a href="../index.html">Login here</a>
+                </div>
+            </form>
+        </div>
+        <div class="image-box"></div>
+    </div>
+
+</body>
+
+</html>
